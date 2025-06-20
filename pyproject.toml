@@ -1,0 +1,23 @@
+[project]
+name = "task-pytest"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Denis Safonov",email = "denissafonov_85@mail.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "flake8 (>=7.2.0,<8.0.0)",
+    "mypy (>=1.16.1,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+isort = "^6.0.1"
+
