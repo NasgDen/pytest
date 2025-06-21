@@ -21,7 +21,7 @@ def calculate_tax(price: float, tax_rate: float, discount: float = 0, rounding: 
         isinstance(price, (float, int))
         and isinstance(tax_rate, (float, int))
         and isinstance(discount, (float, int))
-        and isinstance(rounding, (float, int))
+        and isinstance(rounding, int)
     ):
         if price <= 0:
             raise ValueError("Неверная цена")
