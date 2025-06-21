@@ -3,7 +3,7 @@ from src.utils import calculate_tax, calculate_taxes
 
 def main():
     print(calculate_taxes([2, 4, 6], 10))
-    print(calculate_tax(20, 10000))
+    print(calculate_tax(50.2222, 5, 0, 10))
 
 
 if __name__ == "__main__":

@@ -21,4 +21,17 @@ build-backend = "poetry.core.masonry.api"
 pytest = "^8.4.1"
 isort = "^6.0.1"
 pytest-cov = "^6.2.1"
+black = "^25.1.0"
+
+[tool.black]
+line-length = 119
+exclude = ".git"
+
+[tool.isort]
+line_length = 119
+
+[tools.mypy]
+disallow_untyped_defs = true
+warn_return_any = true
+exclude = "venv"
 
